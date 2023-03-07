@@ -3,12 +3,17 @@
 /* .logo {
     text-align: center; */
 /* } */
+
+body{
+    text-align: center;
+}
+
 .menu {
     position: fixed;
     left: 0px;
     top: -50px;
     width: 100vw;
-    padding: 20px;
+   
     text-align: center;
     background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
@@ -24,8 +29,9 @@
 }
 
 /* SPAN OF SPAN */
-.menu span {
-    margin: 20px;
+nav span {
+   
+    color: white;
 }
 
 .menu span a:hover {
@@ -84,9 +90,9 @@ a {
     font-size: 60px;
 }
 
-.header {
+/* .header {
     background-color: black;
-}
+} */
 
 /* CSS for home.handlebars */
 
@@ -138,10 +144,10 @@ body {
 }
 
 
-.navbar-brand {
-    padding-left: 41%;
+/* .navbar-brand {
+    padding-left: 35%;
 
-}
+} */
 
 
 
