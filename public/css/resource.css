@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(#fedc00, #9fd8f1);
+
+}
+
+.container-fluid {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.content-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #ff6700;
+}
+
+
+
+.btn {
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #ff6700;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #ecd448;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ff6700;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #f0621d;
+    text-shadow: #fea503 2px 2px;
+}
+
+.banner-area {
+    background-image: url('/img/stack.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+
+    opacity: 80%;
+    height: 700px;
+}
+
+.text {
+    font-size: 20px;
+    color: aliceblue;
+    text-shadow: black 2px 2px;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 60px;
+
+}
+
+.navbar-brand {
+    padding-left: 0;
+
+}
+
+section {
+
+    margin: 20px;
+    padding: 80px;
+    border: double 10px #f0621d;
+    border-radius: 10px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card__text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card:hover .card__image img {
+    transform: scale(1.2);
+}
+
+.card:hover .card__content {
+    transform: translateY(-100%);
+}
+
+.card__image {
+    height: 400px;
+    width: 300px;
+    background-color: #000;
+    /* you can put img url here  */
+}
+
+.card {
+    background-color: antiquewhite;
+    border-radius: 15px;
+    margin: 40px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+
+.banner-area h2 {
+    font-size: 80px;
+    color: #f9f4f4;
+}
+
+@media (max-width: 450px) {
+
+    .banner-area {
+        height: 950px;
+
+    }
+
+
+    section {
+        padding: 10px;
+    }
+
+    .text {
+        font-family: slackey, cursive;
+        font-size: 15px;
+        padding: 10px;
+        color: #000;
+        text-shadow: white 2px 2px;
+        background: linear-gradient(#fedc00, #9fd8f1);
+
+    }
+
+    .content-area {
+        display: inline-block;
+    }
+
+
+}
+
+
+@media (max-width: 800px) {
+
+
+    .text {
+        font-family: slackey, cursive;
+        font-size: 15px;
+        padding: 15px;
+        line-height: 1.6;
+        color: #000;
+        text-shadow: white 2px 2px;
+        background: linear-gradient(#fedc00, #9fd8f1)
+    }
+
+    .content-area {
+
+        flex-wrap: wrap;
+    }
+}

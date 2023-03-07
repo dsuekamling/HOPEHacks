@@ -1,0 +1,29 @@
+{
+    "dependencies": {
+        "express": "^4.18.2",
+        "handlebars": "^4.7.7",
+        "hbs": "^4.2.0",
+        "init": "^0.1.2",
+        "node-fetch": "^3.3.0",
+        "nodemon": "^2.0.20",
+        "request": "^2.88.2"
+    },
+    "name": "tester",
+    "description": "Lets practice making a foundation and making changes in here before doing such in our super awesome cool fun application",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ruthcamarillo/testing.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ruthcamarillo/testing/issues"
+    },
+    "homepage": "https://github.com/ruthcamarillo/testing#readme"
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
+
+</head>
+
+
+<body>
+    {{>header}}
+    <section class="contact-section">
+        <h1 class="headers">Contact Us</h1>
+        <section class="border"></section>
+        <form class="contact-form" action="index.html" method="post">
+            <input type="text" class="contact-form-text" placeholder="Name">
+            <input type="email" class="contact-form-text" placeholder="Your Email">
+            <input type="text" class="contact-form-text" placeholder="Phone Number">
+            <textarea class="contact-form-text" placeholder="Leave Us A Review!"></textarea>
+            <input type="submit" section class="contact-form-btn" value="Send">
+        </form>
+    </section>
+    {{>footer}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

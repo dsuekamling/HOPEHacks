@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+
+/* .logo {
+    text-align: center; */
+/* } */
+.menu {
+    position: fixed;
+    left: 0px;
+    top: -50px;
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    color: white;
+    /* transition */
+    transition: top 1s;
+    -webkit-transition: top 1s;
+}
+
+.menu:hover {
+    top: 0px;
+}
+
+/* SPAN OF SPAN */
+.menu span {
+    margin: 20px;
+}
+
+.menu span a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Body and Title*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    font-family: 'Slackey';
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover .overlay a:focus {
+    color: black;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.header {
+    background-color: black;
+}
+
+/* CSS for home.handlebars */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#9fd8f1, #fedc00, #f0621d);
+
+
+}
+
+.half-screen {
+    background-image: url('/img/ORY.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+
+
+    padding-bottom: 80px;
+    max-width: 100%;
+    margin: 0;
+    padding-right: 0;
+    display: inline-block;
+
+}
+
+.main-box {
+    background-image: url('/img/ORY.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+
+
+    padding-bottom: 80px;
+    max-width: 100%;
+    margin: 0;
+    padding-right: 0;
+
+}
+
+/* this is where our logo is living */
+.container-fluid {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar-brand {
+    padding-left: 41%;
+
+}
+
+
+
+/* Grabs the h1 and h2 for our test run */
+.headers {
+    text-align: center;
+    padding: 15px;
+    font-size: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #f0621d;
+    text-shadow: #fea503 2px 2px;
+}
+
+
+/* === removing default button style ===*/
+#searchBtn {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    display: block;
+    padding: 10px;
+    border-radius: 15px;
+    border: double yellow 8px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+/* button styling */
+#searchBtn {
+    border-right: 6px;
+    --text-stroke-color: rgb(255, 255, 51);
+    --animation-color: rgb(255, 255, 51);
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: rgb(107, 195, 226);
+    text-shadow: gray 2px 2px;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* this is the text, when you hover on button */
+#hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover */
+#searchBtn:hover #hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
+
+.buttonsearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    /* border: 3px solid green; */
+}
+
+.searching-box {
+    display: flex;
+    /* justify-content: center;
+  align-items: center; */
+
+    color: whitesmoke;
+    text-shadow: #1a1313 2px 2px;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+/* div that containss the two checks*/
+.checklist {
+    text-align: center;
+    padding: 25px;
+}
+
+input {
+    border-radius: 10px;
+    outline: 2px solid rgb(255, 255, 51);
+    border: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e2e2e2;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.25s;
+}
+
+.input:focus {
+    outline-offset: 10px;
+    background-color: rgb(107, 195, 226);
+}
+
+/* Style the search results */
+
+
+
+#results {
+    max-width: 50%;
+    max-height: 685px;
+
+    margin: 10px;
+    background: linear-gradient(#9fd8f1, #fedc00, #f0621d);
+    /* display: flex; */
+    display: inline-block;
+    /* height: 150px; */
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    border-radius: 15px;
+
+
+
+}
+
+.recipies-card {
+    display: inline-block;
+    /* max-height: 100px; */
+    border: double 5px black;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+#results h3 {
+    font-size: 50px;
+    margin: 10px 0;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: underline;
+}
+
+
+
+
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+
+
+
+/* this is where th footer is livig */
+.footer-basic {
+
+
+    width: 100%;
+    padding: 40px 0;
+    background-color: hsl(29, 87%, 12%);
+    color: wheat;
+
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+@media (max-width: 450px) {
+
+    .navbar-brand {
+        padding-left: 120px;
+    }
+
+
+    #results {
+        max-width: fit-content;
+    }
+
+    .recipies-card {
+        max-width: 250px;
+    }
+
+    #results h3 {
+        font-size: 30px;
+    }
+
+    img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+
+    #results {
+        max-width: fit-content;
+    }
+
+    .recipies-card {
+        max-width: fit-content;
+    }
+
+}

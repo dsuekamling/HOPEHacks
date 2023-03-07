@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+
+.banner-area2 {
+    background-image: url('/img/stack.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+    opacity: 80%;
+    height: 400px;
+}
+
+.headers2 {
+    font-family: slackey, cursive;
+}
+
+.text2 {
+    font-size: 20px;
+    color: aliceblue;
+    text-shadow: rgb(255, 8, 8) 2px 2px;
+    font-family: slackey, cursive;
+    padding: 60px;
+}
