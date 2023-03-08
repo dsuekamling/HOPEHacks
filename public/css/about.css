@@ -19,6 +19,8 @@ body{
     margin-bottom: 20px;
     margin: 50px;
     /* border: double 10px #f0621d */
+   
+   
 }
 h1 {
     
@@ -149,6 +151,7 @@ a {
     font-family: 'Titillium Web', sans-serif;
     padding: 90px;
     text-align: center;
+    
 }
 
 .card-img-top {
@@ -176,5 +179,13 @@ a {
 .card {
     margin:40px;
 }
-@media (max-width: 450px)
+@media (max-width: 480px) {
+    .text2{
+        font-size: 17px;
+        padding: 0px;
+    }
+    .navbar-brand{
+        padding:0px
+    }
+}
 @media (max-width: 800px)
