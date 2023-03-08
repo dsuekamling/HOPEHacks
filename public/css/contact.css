@@ -122,3 +122,11 @@ textarea.contact-form-text {
 .btn:active {
   transform: scale(0.9);
 }
+@media (max-width: 480px) {
+   .btn{
+    display: flex;
+    margin: 0;
+}
+}
+
+@media (max-width: 800px)
