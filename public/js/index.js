@@ -59,5 +59,3 @@ async function searchRecipes() {
         resultsDiv.innerHTML = "No results found.";
     }
 }
-
-

@@ -1,26 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 
-*{
+* {
     /* margin: 30px; */
 }
 
 
-body{
+body {
     text-align: center;
 }
+
 .banner-area2 {
-    background-image: url('/image1/CoconutBlue.jpg'); 
+    background-image: url('/image1/CoconutBlue.jpg');
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-size: cover;
     /* background-size: contain; */
     height: 700px;
     margin-bottom: 20px;
+    margin: 50px;
     /* border: double 10px #f0621d */
+
+
 }
+
 h1 {
-    
+
     font-size: 70px;
     font-family: 'Galada', cursive;
     color: #f0621d;
@@ -28,19 +33,21 @@ h1 {
     text-shadow: #fea503 2px 2px;
     padding-top: 70px;
 }
+
 /* .headers2 {
     /* font-family: 'Galada', cursive;
     color: white;
     text-align: center;
     font-size: 70px;
     
-} */ */
-.section{
+} */
+*/ .section {
     margin: 20px;
     padding: 80px;
     border: double 10px white;
     border-radius: 10px;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -49,6 +56,7 @@ a {
     text-decoration: none;
     color: #ff6700;
 }
+
 .btn {
     padding: 1.1em 2em;
     background: none;
@@ -94,6 +102,7 @@ a {
 .btn:active {
     transform: scale(0.9);
 }
+
 .meet-btn {
     padding: 1.1em 2em;
     background: none;
@@ -148,31 +157,46 @@ a {
     font-family: 'Titillium Web', sans-serif;
     padding: 90px;
     text-align: center;
+
 }
 
 .card-img-top {
     max-height: 250px;
     min-height: 250px;
 }
+
 .headers2 h2 {
-    color:whitesmoke;
+    color: whitesmoke;
 }
-.card-group  {
-    border: double 10px #f0621d
+
+.card-group {
+    border: double 10px #f0621d;
     padding: 10px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
     flex-wrap: wrap;
-    
+    margin-bottom: 50px;
+
 }
-.card-img-top{
-    
-    width: 75px%;
+
+.card-img-top {
+
+    width: 75px;
 }
+
 .card {
-    margin:40px;
+    margin: 40px;
 }
-@media (max-width: 450px)
-@media (max-width: 800px)
+
+@media (max-width: 480px) {
+    .text2 {
+        font-size: 17px;
+        padding: 0px;
+    }
+
+    .navbar-brand {
+        padding: 0px
+    }
+}
