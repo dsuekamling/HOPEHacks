@@ -91,9 +91,10 @@ textarea.contact-form-text {
   background-color: #ecd448;
   font-weight: bolder;
   box-shadow: 0 2px 0 2px #000;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: slackey;
   margin: -10px 165px;
-  left:47%;
+  left:38%;
+  margin-top: 15px;
 }
 
 .btn:before {
@@ -121,3 +122,11 @@ textarea.contact-form-text {
 .btn:active {
   transform: scale(0.9);
 }
+@media (max-width: 480px) {
+   .btn{
+    display: flex;
+    margin: 0;
+}
+}
+
+@media (max-width: 800px)
