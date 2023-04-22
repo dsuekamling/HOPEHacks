@@ -16,7 +16,9 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "build"
+              "build": "handlebars source/templates/*.hbs -f public/templates.js"
+            
+          
     },
     "repository": {
         "type": "git",
