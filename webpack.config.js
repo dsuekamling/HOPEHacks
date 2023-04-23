@@ -3,9 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/app.js',
+  entry: {
+    main: './src/app.js',
+    vendor: ['react', 'react-dom'],
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
   },
@@ -64,7 +67,7 @@ module.exports = {
       chunks: ['main'],
     }),
     new MiniCssExtractPlugin({
-      filename: 'css/style.css',
+      filename: 'css/style.[contenthash].css',
     }),
   ],
   devServer: {
@@ -78,7 +81,7 @@ module.exports = {
       cacheGroups: {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
+          name: 'vendor',
           chunks: 'all',
         },
       },
