@@ -4,17 +4,14 @@ const pool = require('./src/utils/database');
 const path = require('path');
 const hbs = require('hbs');
 const searchRouter = require('./src/utils/search');
+// Serve static files from the public directory
+app.use(express.static(path.join(__dirname, 'public')));
 // Set up Handlebars as the view engine
 app.set('view engine', 'hbs');
 // Set the path to the views directory
 app.set('views', path.join(__dirname, 'templates', 'views'));
 // Register partials directory
 hbs.registerPartials(path.join(__dirname, 'templates', 'partials'));
-// Parse the request body as JSON
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-// Serve static files from the public directory
-app.use(express.static(path.join(__dirname, 'public')));
 // Use the search router for handling search requests
 app.use('/search', searchRouter);
 // Define a GET endpoint for the contact form
